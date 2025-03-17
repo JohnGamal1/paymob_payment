@@ -6,7 +6,7 @@ class PaymobPayment {
   bool _isInitialized = false;
 
   final Dio _dio = Dio();
-  final _baseURL = 'https://accept.paymob.com/api/';
+  final _baseURL = 'https://ksa.paymob.com/api/';
   late String _apiKey;
   late int _integrationID;
   late int _iFrameID;
@@ -34,7 +34,7 @@ class PaymobPayment {
     _apiKey = apiKey;
     _integrationID = integrationID;
     _iFrameID = iFrameID;
-    _iFrameURL = 'https://accept.paymobsolutions.com/api/acceptance/iframes/$_iFrameID?payment_token=';
+    _iFrameURL = 'https://ksa.paymob.com/api/acceptance/iframes/$_iFrameID?payment_token=';
     _isInitialized = true;
     _userTokenExpiration = userTokenExpiration;
     return _isInitialized;
